@@ -1,6 +1,7 @@
 # Scrape_Master 🕷️📊
 
 **Scrape_Master** is a containerized web scraping and data presentation app built with **Streamlit** and **Playwright**.
+![screenshot](Web Scraper.png)  
 
 ## 🚀 Features
 
