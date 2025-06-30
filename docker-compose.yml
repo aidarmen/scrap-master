@@ -4,7 +4,7 @@ services:
     
     container_name: webscraper
     ports:
-      - "127.0.0.1:8080:8080"  # host:container
+      - 8080:8080"  # host:container
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - SUPABASE_URL=${SUPABASE_URL}
