@@ -2,7 +2,7 @@ services:
   project1:
     build: ./
     
-    container_name: naughty_goodall
+    container_name: webscraper
     ports:
       - "127.0.0.1:8502:80"  # host:container
     environment:
