@@ -25,8 +25,8 @@ Scrape_Master/
 ## 🐳 Running with Docker
 
 ```bash
-docker build -t scrape_master .
-docker run -p 8502:8502 scrape_master
+docker-compose build --no-cache
+docker-compose up -d
 ```
 
 Access it at: [http://localhost:8502](http://localhost:8502)

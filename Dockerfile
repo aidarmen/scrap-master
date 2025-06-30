@@ -1,5 +1,6 @@
 # Use a lightweight Python image
-FROM mcr.microsoft.com/playwright/python:v1.52.0-jammy
+FROM mcr.microsoft.com/playwright/python:v1.53.0-jammy
+
 
 
 # Set working directory
@@ -15,7 +16,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose Streamlit's default port
-EXPOSE 8502
+EXPOSE 80
 
 # Run the Streamlit app
-CMD ["streamlit", "run", "streamlit_app.py", "--server.port=8502", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "streamlit_app.py", "--server.port=80", "--server.address=0.0.0.0"]

@@ -1,0 +1,13 @@
+services:
+  project1:
+    build: ./
+    
+    container_name: naughty_goodall
+    ports:
+      - "127.0.0.1:8502:80"  # host:container
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY}
+    mem_limit: 400m
+    restart: always
