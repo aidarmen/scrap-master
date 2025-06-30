@@ -15,6 +15,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of your app
 COPY . .
 
+COPY .streamlit /app/.streamlit
+
+
 # Expose Streamlit's default port
 EXPOSE 8080
 
